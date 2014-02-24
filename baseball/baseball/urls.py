@@ -10,6 +10,8 @@ urlpatterns = patterns('',
 
     #url(r'^admin/', include(admin.site.urls)),
     
-    url(r'^roster-main/$', 'roster.views.home')
+    url(r'^roster-main/$', 'roster.views.home'),
+    
+    url(r'^admin/', include(admin.site.urls)),
     
 )

@@ -1,0 +1,67 @@
+[
+    {
+        "pk": 1,
+        "model": "roster.Player",
+        "fields": {
+            "name": "Skye Bolt",
+            "dominant_hand": "d",
+            "number": "20",
+            "photo": "1",
+            "position": "1",
+            "height": "1",
+            "year": "1",
+            "hometown": "1",
+            "high_school": "1",
+            "batting_avg": ".100",
+            "gp_gs": "1",
+            "at_bats": "1",
+            "runs": "1",
+            "hits": "1",
+            "doubles": "1",
+            "homeruns": "1",
+            "rbi": "1",
+            "total_bases": "1",
+            "slugging": ".001",
+            "walks": "1",
+            "strikeouts": "1",
+            "on_base_percentage": ".100",
+            "assists": "1",
+            "errors": "1",
+            "date": "2014-12-12"
+         
+        }
+    },
+    
+    {
+          "pk": 2,
+        "model": "roster.Player",
+        "fields": {
+            "name": "somebody else",
+            "dominant_hand": "d",
+            "number": "21",
+            "photo": "3",
+            "position": "1",
+            "height": "1",
+            "year": "1",
+            "hometown": "1",
+            "high_school": "1",
+            "batting_avg": ".1",
+            "gp_gs": "1",
+            "at_bats": "1",
+            "runs": "1",
+            "hits": "1",
+            "doubles": "1",
+            "homeruns": "1",
+            "rbi": "1",
+            "total_bases": "1",
+            "slugging": ".001",
+            "walks": "1",
+            "strikeouts": "1",
+            "on_base_percentage": ".1",
+            "assists": "1",
+            "errors": "1",
+            "date": "2014-12-12"
+        }
+    }
+]
+
