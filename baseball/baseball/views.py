@@ -1,9 +1,7 @@
 # project1/baseball/views.py
 
-from django.shortcuts import render
-
+from roster.models import Player
 from django.shortcuts import render, get_object_or_404
-
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
@@ -11,9 +9,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 #home page for UNC athletics
 def home (request):
-    context = {
-        'player_count': Player.objects.count(),
-        }
+    context = {'player_count': Player.objects.count()}
     return render(request, "roster/home.html", context)
 
 

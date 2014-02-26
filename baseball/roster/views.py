@@ -5,10 +5,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
- 
 
 #home page for UNC athletics on bigger app
-
 
 
 #list page 
