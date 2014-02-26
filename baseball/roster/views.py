@@ -8,7 +8,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 #home page for UNC athletics on bigger app - this will actually be teams 
+
 def home (request):
+    player_list = Player.objects.order.by(name) ,
     return render(request, "roster/home.html", {'player': player})
     
 
