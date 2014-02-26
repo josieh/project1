@@ -7,8 +7,9 @@ from roster import views
 urlpatterns = patterns('',
     
     url(r'^$', 'roster.views.home', name='home'),
-    url(r'^roster/$', 'roster.views.list', name='list'),
-    url(r'^player_list/(?P<pk>\d+)$', 'roster.views.player', name='roster_player'),
+    url(r'^roster/$', 'roster.views.roster', name='list'),
+    url(r'^player_list/(?P<pk>\d+)$', 'roster.views.player', name='player'),
+    url(r'^player/(?P<pk>\d+)$', 'roster.views.player', name='player'),
      
     
 )

@@ -14,10 +14,20 @@ def home (request):
 
 #list page 
 def roster (request):
-    player = Player.objects.order.by(number)[0],
-    return render(request, "roster/list.html", {'player': player})
+    player_list = Player.objects.all()
+    paginator = Paginator(player_list, 25)
+    page = request.GET.get('page')
+    try:
+        players=paginator.page(page)
+    except PageNotAnInteger:
+        players = paginator.page(1)
+    except EmptyPage:
+        players = paginator.page(1)
+    return render(request, "roster/player_list.html", {'player': player})
+
 
 #detail page 
 def player (request, pk):
     player = get_object_or_404(Player, id=pk)
     return render(request, "roster/detail.html", {'player': player})
+
