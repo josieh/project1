@@ -8,9 +8,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 #home page for UNC athletics
-def home (request):
-    context = {'player_count': Player.objects.count()}
-    return render(request, "roster/home.html", context)
 
+def home (request):
+    player_list = Player.objects.order.by(name) ,
+    return render(request, "roster/home.html", {'player': player})
 
 
