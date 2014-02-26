@@ -1,4 +1,4 @@
-<!-- new file: roster/templates/roster/student_list.html -->
+<!-- new file: roster/templates/roster/player_list.html -->
 
 {% extends "base.html" %}
 
@@ -6,8 +6,8 @@
     <h2>All Players</h2>
     <ul>
     {% for player in players %}
-    {# Each "player" is a student model object. #}
-    <li><a href="{{ student.id }}">{{ student.name }}</a> | {{ student.pid }}</li>
+    {# Each "player" is a player model object. #}
+    <li><a href="{{ player.number }}">{{ player.name }}</a> | {{ student.number }}</li>
 {% endfor %}
 </ul>
 
@@ -18,7 +18,7 @@
         {% endif %}
 
         <span class="current">
-            Page {{ players.number }} of {{ students.paginator.num_pages }}.
+            Page {{ players.number }} of {{ players.paginator.num_pages }}.
         </span>
 
         {% if students.has_next %}
