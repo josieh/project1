@@ -10,9 +10,7 @@ class MembershipInline(admin.TabularInline):
 
 class PlayerAdmin(admin.ModelAdmin):
     search_fields = ('name',)
-    inlines = [
-        MembershipInline,
-    ]
+    
 
 admin.site.register(Player, PlayerAdmin)
 

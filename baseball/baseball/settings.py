@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     #'django.contrib.sites',
     'django.contrib.staticfiles',
     'django.contrib.admindocs',
+    'django.contrib.humanize',
     'roster',
 )
 
@@ -91,5 +92,11 @@ TEMPLATE_DIRS = (
     #always use forward slashes, even on windows
     # don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_ROOT, 'templates'),
+)
+
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.filesystem.Loader',
+    'django.template.loaders.app_directories.Loader',
 )
 

@@ -2,6 +2,8 @@ from django.db import models
 
 # Create your models here.
 
+
+
 class Player(models.Model):
     number = models.IntegerField(unique=True, max_length=2)
     name = models.CharField(unique=False, max_length=50)
@@ -29,6 +31,7 @@ class Player(models.Model):
     assists = models.IntegerField(unique=False, max_length=6)
     errors = models.IntegerField(unique=False, max_length=6)
     date = models.DateField();
+    
     
     class Meta(object):
         verbose_name_plural = "Players"

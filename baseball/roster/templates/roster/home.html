@@ -1,0 +1,15 @@
+ 
+  {% extends "base.html"%}
+  {% load humanize %}
+  
+   {% block content %}
+ 
+ <h1>Welcome to the UNC Athletic's unofficial (but much better) website</h1>
+        <p>On this site you can find team social media feeds, sports multimedia, polls, and much more!</p>
+        <p>STATS ON STATS ON STATS</p>
+        <p>{{message|lower}}</p>
+        <p>This information is updated as of {% now "l" %}</p>
+    <p><a href="{% url 'roster_player_list' %}">List of Players</a></p>
+    
+  {% endblock %}
+    
