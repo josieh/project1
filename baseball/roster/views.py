@@ -1,18 +1,16 @@
 # project1/baseball/roster/views.py
-
-from roster.models import Team, Player
-from django.shortcuts import render, get_object_or_404, redirect, render_to_response
+from roster.models import Player
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+
 
 # Create your views here.
 
 
 #home page for UNC athletics on bigger app - this will actually be teams 
 
-def home (request):
-    player_list = Player.objects.order.by(name) ,
-    return render(request, "roster/home.html", {'player': player})
-    
+def home (request): 
+    return render(request, "roster/home.html")
 
 #list page 
 def roster (request):

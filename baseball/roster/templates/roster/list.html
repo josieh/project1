@@ -10,6 +10,8 @@
     <li><a href="{{ student.id }}">{{ student.name }}</a> | {{ student.pid }}</li>
 {% endfor %}
 </ul>
+    
+    <p><a href="{% url 'roster/player_list' %}">List of Players</a></p>
 
 <div class="pagination">
     <span class="step-links">
