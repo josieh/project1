@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+#newschool doesn't have that 
 PROJECT_ROOT = os.path.dirname(__file__)
 PROJECT_PATH = os.path.dirname(PROJECT_ROOT)
 
@@ -27,7 +28,6 @@ DEBUG = True
 TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -81,11 +81,18 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media_root')
+
+MEDIA_URL = '/media/'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
-STATIC_ROOT = os.path.join(PROJECT_PATH, 'static_media'),
+
+
+
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'static_media')
 
 STATIC_URL = '/static/'
 
@@ -93,7 +100,7 @@ STATICFILES_DIRS = (
     #put strings here, like "/home/html/static"
     #always use forward slashes,
     #don't foget to use aboslute paths, not relative paths,
-    os.path.join(PROJECT_ROOT, 'static_media'),
+    os.path.join(PROJECT_ROOT, 'static_media')
 )
 
 STATICFILES_FINDERS = (
@@ -114,7 +121,3 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 )
-
-
-
-

@@ -1,6 +1,6 @@
 # project1/baseball/roster/views.py
 from roster.models import Player
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
@@ -9,8 +9,11 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 #home page for UNC athletics on bigger app - this will actually be teams 
 
-def home (request): 
-    return render(request, 'roster/home.html', {"player": player})
+def home (request):
+    context= {
+        'message' : "steven is cool",
+    }
+    return render(request, 'roster/home.html', context)
     #return render(request, "roster/home.html") - this is without importing players... doesn't matter they
     #won't be show up anyway
 
@@ -27,7 +30,7 @@ def roster (request):
         players = paginator.page(1)
     except EmptyPage:
         players = paginator.page(1)
-    return render(request, "roster/player_list.html", {'player': player})
+    return render(request, "roster/player_list.html", {'players': players})
 
 
 #detail page 

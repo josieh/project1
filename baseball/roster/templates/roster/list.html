@@ -6,8 +6,9 @@
     <h2>All Players</h2>
     <ul>
     {% for player in players %}
-    {# Each "player" is a student model object. #}
-    <li><a href="{{ student.id }}">{{ student.name }}</a> | {{ student.pid }}</li>
+    <!-- Each "player" is a student model object.-->
+    
+    <li><a href="{{ player.id }}">{{ player.name }}</a> | {{ player.id }}</li>
 {% endfor %}
 </ul>
     

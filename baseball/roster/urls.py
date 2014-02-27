@@ -1,5 +1,6 @@
 # app urls roster/urls.py
 from django.conf.urls import patterns, url
+
 from roster import views
 
 
@@ -7,9 +8,8 @@ from roster import views
 urlpatterns = patterns('',
     
     url(r'^$', 'roster.views.home', name='home'),
-    url(r'^roster/$', 'roster.views.roster', name='list'),
-    url(r'^player_list/(?P<pk>\d+)$', 'roster.views.player', name='player'),
-    url(r'^player/(?P<pk>\d+)$', 'roster.views.player', name='player'),
+    url(r'^players/$', 'roster.views.roster', name='list'),
+    url(r'^players/(?P<pk>\d+)$', 'roster.views.player', name='player'),
      
     
 )
