@@ -85,7 +85,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
+STATIC_ROOT = os.path.join(PROJECT_PATH, 'static_media'),
+
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    #put strings here, like "/home/html/static"
+    #always use forward slashes,
+    #don't foget to use aboslute paths, not relative paths,
+    os.path.join(PROJECT_ROOT, 'static_media'),
+)
+
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
+
 
 TEMPLATE_DIRS = (
     #put strings here, like "home/html/django_templates"
@@ -99,4 +114,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 )
+
+
+
 
