@@ -2,9 +2,11 @@
 
 <html lang=en>
     <head>
-        <title> {% block title %}UNC Athletics{% endblock%} </title>
+        <title> {% block title %}UNC Athletics{% endblock %} </title>
+      
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-        <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+        {% block css %}
+        {% endblock %}
     </head>
     
     
@@ -14,17 +16,16 @@
     <div class="container">
 
     {% block content %}
-       
+           
        
     {% endblock %}
     </body>
     
-        </div>
+    </div>
 </html>
 
-      <script src="//ajax.googleapis.com/ajax/lib/jquery/1.8.3/jguery.min.js"></script>
-        <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     </body>
     
     
-</html>

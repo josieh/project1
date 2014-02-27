@@ -12,6 +12,8 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def home (request): 
     return render(request, "roster/home.html")
 
+    
+
 #list page 
 def roster (request):
     player_list = Player.objects.all()

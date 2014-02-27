@@ -1,14 +1,19 @@
  
   {% extends "base.html"%}
   {% load humanize %}
+  {% block css %}
+
+  {% endblock %}
+  
   
    {% block content %}
        
-       <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+       
  
- <h1>Welcome to the UNC Athletic's unofficial (but much better) website</h1>
+        <h1>Welcome to the UNC Athletic's unofficial (but much better) website</h1>
         <p>On this site you can find team social media feeds, sports multimedia, polls, and much more!</p>
         <p>STATS ON STATS ON STATS</p>
+        <p>Ideally this would be a styled page. Oh please oh please</p>
         <p>This information is updated as of {% now "l" %}</p>
     
     
