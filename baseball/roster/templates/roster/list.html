@@ -15,15 +15,15 @@
 
 <div class="pagination">
     <span class="step-links">
-        {% if students.has_previous %}
+        {% if players.has_previous %}
             <a href="?page={{ players.previous_page_number }}">previous</a>
         {% endif %}
 
         <span class="current">
-            Page {{ players.number }} of {{ students.paginator.num_pages }}.
+            Page {{ players.number }} of {{ players.paginator.num_pages }}.
         </span>
 
-        {% if students.has_next %}
+        {% if players.has_next %}
             <a href="?page={{ players.next_page_number }}">next</a>
         {% endif %}
     </span>

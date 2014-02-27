@@ -10,7 +10,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #home page for UNC athletics on bigger app - this will actually be teams 
 
 def home (request): 
-    return render(request, "roster/home.html")
+    return render(request, 'roster/home.html', {"player": player})
+    #return render(request, "roster/home.html") - this is without importing players... doesn't matter they
+    #won't be show up anyway
 
     
 
