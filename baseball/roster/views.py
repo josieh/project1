@@ -11,9 +11,11 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def home (request):
     context= {
-        'message' : "steven is cool",
+        'message' : " ",
+        'player_count': Player.objects.count(),
     }
     return render(request, 'roster/home.html', context)
+    
     #return render(request, "roster/home.html") - this is without importing players... doesn't matter they
     #won't be show up anyway
 
@@ -37,4 +39,5 @@ def roster (request):
 def player (request, pk):
     player = get_object_or_404(Player, id=pk)
     return render(request, "roster/detail.html", {'player': player})
+
 

@@ -3,8 +3,14 @@
 <html lang=en>
     <head>
         <title> {% block title %}UNC Athletics{% endblock %} </title>
-      
+        
+        
+        
         <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
+        <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+                
+
         {% block css %}
         {% endblock %}
     </head>
@@ -12,8 +18,7 @@
     
     <body>
         
-        
-    <div class="container">
+    <div class="container_base">
 
     {% block content %}
            

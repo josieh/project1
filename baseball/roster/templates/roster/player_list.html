@@ -4,12 +4,32 @@
 
 {% block content %}
     <h2>All Players</h2>
-    <ul>
-    {% for player in players %}
-    {# Each "player" is a player model object. #}
-    <li><a href="{{ player.id }}">{{ player.name }}</a> | {{ player.number }}</li>
-{% endfor %}
-</ul>
+
+    
+    
+    <table id="table_id">
+    <thead>
+        <a href="{{ player.id }}">{{ player.name }}</a>
+        <tr>
+            <th>Player Name</th>
+            <th>Jersey Number/th>
+            <th>RBI</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in players %}
+        {# Each "player" is a player model object. #}
+        <tr>
+            <td><a href="{{ player.id }}">{{ player.name }}</a></td>
+            <td>{{ player.number }}</td>
+            <td>{{ player.rbi }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    
+    
+    <p><a href="/">Return to UNC Athletics home page</a></p>
 
 <div class="pagination">
     <span class="step-links">

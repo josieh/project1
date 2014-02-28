@@ -1,3 +1,30 @@
+
+/* These are styles that I've added
+Colors:
+Dark Blue: #2F6D9B
+light blue: #AAD8FF
+Carolina blue: #4DB3FF
+medium dark carolina: #3D90CC
+Grayish color:#4D6A7F
+
+
+*/
+
 body {
-    color: red;
+    background-image: url("images/gray-pattern.png");
+}
+
+div.container_base {
+    width: 90%;
+    background-color: #AAD8FF;
+    opacity: .90;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: left;
+}
+
+img {
+    float: right;
 }

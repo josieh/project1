@@ -9,7 +9,7 @@ class Team(models.Model):
 class Player(models.Model):
     number = models.IntegerField(unique=True, max_length=2)
     name = models.CharField(max_length=50)
-    photo  = models.TextField(unique=True)
+    imgurl = models.TextField(max_length = 100)
     dominant_hand = models.CharField(max_length=20)
     position = models.CharField(max_length=20)
     height = models.CharField(max_length=3)
