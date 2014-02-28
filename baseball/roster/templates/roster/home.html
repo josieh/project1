@@ -10,12 +10,42 @@
        {{message}}
            
  
+        <div class="home_header">
+            <h1 class="home_header">There is only one Carolina.</h1>
+        </div>
         <h1>Welcome to the UNC Athletic's unofficial website</h1>
         <p><a href="players/">Baseball Team</a></p>
         <p>On this site you can find team social media feeds, sports multimedia, polls, and much more!</p>
         <p>STATS ON STATS ON STATS</p>
         <p>This information is updated as of {% now "l" %}</p>
-    
+        
+        <table id="table_id">
+            <thead>
+                <tr>
+                    <th>Sport</th>
+                    <th>Season</th>
+                    <th>News</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1 Data 1</td>
+                    <td>Row 1 Data 2</td>
+                    <td>etc</td>
+                </tr>
+                <tr>
+                    <td>Row 2 Data 1</td>
+                    <td>Row 2 Data 2</td>
+                    <td>etc</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+        
     
   {% endblock %}
     

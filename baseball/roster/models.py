@@ -2,10 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-class Team(models.Model):
-    sport = models.TextField(max_length=40)
-    gender = models.TextField(max_length=8)
-
 class Player(models.Model):
     number = models.IntegerField(unique=True, max_length=2)
     name = models.CharField(max_length=50)

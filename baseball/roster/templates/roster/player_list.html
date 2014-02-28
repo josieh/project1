@@ -5,14 +5,20 @@
 {% block content %}
     <h2>All Players</h2>
 
+    <script>
+    $(document).ready(function() {
+    $('#example').dataTable( {
+        "aaSorting": [[ 30, "desc" ]]
+    } );
+} );
+    </script>
     
-    
-    <table id="table_id">
+    <table id="player_list">
     <thead>
         <a href="{{ player.id }}">{{ player.name }}</a>
         <tr>
             <th>Player Name</th>
-            <th>Jersey Number/th>
+            <th>Jersey Number</th>
             <th>RBI</th>
         </tr>
     </thead>

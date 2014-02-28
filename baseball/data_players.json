@@ -62,6 +62,39 @@
             "errors": "1",
             "date": "2014-12-12"
         }
+    },
+    
+    
+    {
+        "pk": 3,
+        "model": "roster.Player",
+        "fields": {
+            "name": "Michael Massardo",
+            "dominant_hand": "L/R",
+            "number": "1",
+            "imgurl": "http://image.cdnllnwnl.xosnetwork.com/pics33/400/XC/XCACSSLIZEHHCDU.20130826190409.jpg",
+            "position": "OF",
+            "height": "5-7",
+            "weight": "170",
+            "year": "Sophomore",
+            "hometown": "Waxhaw, N.C.",
+            "high_school": "Charlotte Latin",
+            "batting_avg": ".100",
+            "gp_gs": "0",
+            "at_bats": "1",
+            "runs": "1",
+            "hits": "1",
+            "doubles": "1",
+            "homeruns": "1",
+            "rbi": "1",
+            "total_bases": "1",
+            "slugging": ".001",
+            "walks": "1",
+            "strikeouts": "1",
+            "on_base_percentage": ".100",
+            "assists": "1",
+            "errors": "1",
+            "date": "2014-12-12"
+        }
     }
 ]
-

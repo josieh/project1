@@ -20,11 +20,30 @@ div.container_base {
     opacity: .90;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
     padding: 2%;
     text-align: left;
 }
 
 img {
     float: right;
+}
+
+div.home_header {
+    width: 100%;
+    color: white;
+    background-color: #4D6A7F;
+    opacity: .90;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    text-align: center;
+}
+
+h1.home_header {
+    font-style: italic;
+    font-size: 90pt;
+}
+
+table.player_list {
+    font-size: smaller;
 }
