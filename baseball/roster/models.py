@@ -5,7 +5,8 @@ from django.db import models
 class Player(models.Model):
     number = models.IntegerField(max_length=2)
     name = models.CharField(max_length=50)
-    imgurl = models.TextField(max_length = 100)
+    imgurl = models.TextField(max_length = 700)
+    action = models.TextField(max_length = 700)
     dominant_hand = models.CharField(max_length=20)
     position = models.CharField(max_length=20)
     height = models.CharField(max_length=3)
@@ -17,7 +18,7 @@ class Player(models.Model):
     gp_gs = models.CharField(max_length=7)
     at_bats = models.IntegerField(max_length=6)
     runs = models.IntegerField(max_length=6)
-    hits = models.IntegerField(max_length=6)
+    hits = models.IntegerField(max_length=6)                                 
     doubles = models.IntegerField(max_length=6)
     homeruns = models.IntegerField(max_length=6)
     rbi = models.IntegerField(max_length=6)
@@ -41,5 +42,3 @@ class Player(models.Model):
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
         
-
-

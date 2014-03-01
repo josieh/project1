@@ -19,7 +19,14 @@
         <tr>
             <th>Player Name</th>
             <th>Jersey Number</th>
-            <th>RBI</th>
+            <th>Dominant Hand</th>
+            <th>Position</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Year</th>
+            <th>Batting Average</th>
+            <th>Runs</th>
+            
         </tr>
     </thead>
     <tbody>
@@ -28,7 +35,15 @@
         <tr>
             <td><a href="{{ player.id }}">{{ player.name }}</a></td>
             <td>{{ player.number }}</td>
-            <td>{{ player.rbi }}</td>
+            <td>{{ player.dominant_hand }}</td>
+            <td>{{ player.position }}</td>
+            <td>{{ player.height }}</td>
+            <td>{{ player.weight }}</td>
+            <td>{{ player.year }}</td>
+            <td>{{ player.batting_avg }}</td>
+            <td>{{ player.runs }}</td>
+            
+            
         </tr>
         {% endfor %}
     </tbody>
@@ -39,10 +54,10 @@
 
 
 
-
+    <div id="twitter_baseball>
         <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
+    </div> 
 
 
 {% endblock %}
