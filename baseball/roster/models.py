@@ -36,7 +36,7 @@ class Player(models.Model):
         ordering = ('number', 'name')
     
     def __unicode__(self):
-        return U'%s %s' %(self.name, self.number)
+        return U'%s | %s' %(self.name, self.number)
     
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
