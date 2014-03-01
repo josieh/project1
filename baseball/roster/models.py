@@ -25,10 +25,10 @@ class Player(models.Model):
     slugging = models.DecimalField(decimal_places=5, max_digits=5)
     walks = models.IntegerField(max_length=6)
     strikeouts = models.IntegerField(max_length=6)
-    on_base_percentage = models.DecimalField(decimal_places=5, max_digits=5   )
+    on_base_percentage = models.DecimalField(decimal_places=5, max_digits=5)
     assists = models.IntegerField(max_length=6)
     errors = models.IntegerField(max_length=6)
-    date = models.DateField();
+    story = models.TextField(max_length=300)
     
     
     class Meta(object):
