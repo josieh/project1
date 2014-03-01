@@ -16,9 +16,14 @@
         <script src="{{ STATIC_URL }}js/DataTables-1.9.4/media/js/jquery.dataTables.min.js"></script>
         
         <script>
+        
             $(document).ready(function() {
             $('#player_list').dataTable();
             } );
+            
+            
+            
+            
         </script>
 
         {% block css %}
@@ -29,6 +34,10 @@
     <body>
         
     <div class="container_base">
+        
+        <div class="home_header">
+            <h1 class="home_header">There is only one Carolina.</h1>
+        </div>
 
     {% block content %}
            

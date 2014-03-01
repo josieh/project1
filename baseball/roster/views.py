@@ -24,7 +24,7 @@ def home (request):
 #list page 
 def roster (request):
     player_list = Player.objects.all()
-    paginator = Paginator(player_list, 25)
+    paginator = Paginator(player_list, 100)
     page = request.GET.get('page')
     try:
         players=paginator.page(page)

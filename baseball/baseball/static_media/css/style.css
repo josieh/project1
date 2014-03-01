@@ -49,3 +49,7 @@ h1.home_header {
 #player_list {
    color: #2F6D9B;
 }
+
+#player_list td {
+    margin: 3%;
+}

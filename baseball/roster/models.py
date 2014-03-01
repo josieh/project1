@@ -28,7 +28,7 @@ class Player(models.Model):
     on_base_percentage = models.DecimalField(decimal_places=5, max_digits=5)
     assists = models.IntegerField(max_length=6)
     errors = models.IntegerField(max_length=6)
-    story = models.TextField(null=True, max_length=300)
+    story = models.TextField (unique=False)
     
     
     class Meta(object):
@@ -36,7 +36,7 @@ class Player(models.Model):
         ordering = ('number', 'name')
     
     def __unicode__(self):
-        return U'%s | %s' %(self.name, self.number)
+        return U'%s %s' %(self.name, self.number)
     
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
