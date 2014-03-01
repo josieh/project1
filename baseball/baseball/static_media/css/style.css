@@ -44,7 +44,8 @@ h1.home_header {
     font-size: 90pt;
 }
 
+/*style for tables*/
+
 #player_list {
-    font-style: italic;
-    color: red;
+   color: #2F6D9B;
 }
