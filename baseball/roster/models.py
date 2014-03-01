@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Player(models.Model):
-    number = models.IntegerField(unique=True, max_length=2)
+    number = models.IntegerField(max_length=2)
     name = models.CharField(max_length=50)
     imgurl = models.TextField(max_length = 100)
     dominant_hand = models.CharField(max_length=20)
@@ -28,7 +28,7 @@ class Player(models.Model):
     on_base_percentage = models.DecimalField(decimal_places=5, max_digits=5)
     assists = models.IntegerField(max_length=6)
     errors = models.IntegerField(max_length=6)
-    story = models.TextField(max_length=300)
+    story = models.TextField(null=True, max_length=300)
     
     
     class Meta(object):
