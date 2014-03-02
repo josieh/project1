@@ -92,10 +92,16 @@ p {
 
 /*style for tables*/
 
-#player_list {
-   color: #2F6D9B;
+container.player_list th {
+    padding: 1%;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 120;
 }
 
-#player_list td {
-    margin: 3%;
+
+container.player_list td {
+    padding: 1%;
+    text-align: center;
+    font-size: 10pt;
 }
