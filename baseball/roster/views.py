@@ -39,5 +39,6 @@ def roster (request):
 def player (request, pk):
     player = get_object_or_404(Player, id=pk)
     return render(request, "roster/detail.html", {'player': player})
+    
 
 

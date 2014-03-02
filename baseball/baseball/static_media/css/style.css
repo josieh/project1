@@ -37,6 +37,18 @@ div.home_header {
     text-align: center;
 }
 
+div.container-responsive {
+   position: relative; 
+   }
+div.responsive-container iframe {
+    width: 100%;
+    height: 100%;
+    }
+td.video {
+    height: 100%;
+    width: 100%;
+}
+
 container.baseball {
     width: 30%;
     
@@ -47,10 +59,26 @@ h1.home_header {
     font-size: 90pt;
 }
 
+div.col-md-12 {
+    background-image: url("images/stadium-header.png");
+    padding-top: 8%;
+    padding-bottom: 8%;
+    background-opacity: .80;
+}
+
+
+
 /*style for detail*/
 
 h1.player_list {
     text-align: center;
+    color: white;
+    font-size: 53pt;
+}
+
+h4.player_list {
+    text-align: center;
+    color: #AAD8FF;
 }
 
 
@@ -84,13 +112,39 @@ figcaption {
 }
 
 
-/*style for detail*/
-
 p {
     clear: both;
 }
 
 /*style for tables*/
+
+table.sports_table {
+    text-align: left;
+    padding: 1%;
+    border-collapse: collapse;
+    background-color: #4D6A7F;
+    color: white;
+    position: relative;
+    clear: both;
+}
+
+table.sports_table a {
+    text-align: left;
+    padding: 1%;
+    border-collapse: collapse;
+    background-color: #4D6A7F;
+    color: white;
+}
+
+table.sports_table td{
+    padding: 2%;
+    margin: 2%;
+    
+}
+
+table.sports_table th{
+    padding: 1%;
+}
 
 container.player_list th {
     padding: 1%;

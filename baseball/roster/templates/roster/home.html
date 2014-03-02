@@ -11,20 +11,27 @@
            
  
 
-        <h1>Welcome to the UNC Athletic's unofficial website</h1>
-        <p><a href="players/">Baseball Team</a></p>
+        <h1>Welcome to UNC Athletic's Official website</h1>
+       
         <p>On this site you can find team social media feeds, sports multimedia, polls, and much more!</p>
-        <p>STATS ON STATS ON STATS</p>
-        <p>This information is updated as of {% now "l" %}</p>
-        
-        <table id="sports_table">
-    <thead>
+       
+       <div class="col-md-8"> 
+        <td class="video">
+            <iframe src="//player.vimeo.com/video/85091524?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+        </td>
+        </div>
+       
+       
+        <div class="col-md-4">
+        <h4>Explore UNC Athletics</h4>
+        <table class="sports_table">
+        <thead>
         <tr>
-            <th>Men</th>
-            <th>Women</th>
+            <th>Men's Teams</th>
+            <th>Women's Teams</th>
         </tr>
-    </thead>
-    <tbody>
+        </thead>
+        <tbody>
         <tr>
             <td><a href="players/">Baseball</a></td><td><a href="#">Gymnastics</a></td>
         </tr>
@@ -50,16 +57,19 @@
             <td><a href="#">Soccer</a></td><td><a href="#">Soccer</a></td>
         </tr>
          <tr>
-            <td><a href="#">Swimming & Diving</a></td><td><a href="#">Swimming & Diving</a></td>
+            <td><a href="#">Swimming</a></td><td><a href="#">Swimming</a></td>
+        </tr>
+         <tr>
+            <td><a href="#">Diving</a></td><td><a href="#">Diving</a></td>
         </tr>
          <tr>
             <td><a href="#">Tennis</a></td><td><a href="#">Tennis</a></td>
         </tr>
          <tr>
-            <td><a href="#"></a></td><td><a href="#">Softball</a></td>
+            <td><a href="#">Wrestling</a></td><td><a href="#">Softball</a></td>
         </tr>
          <tr>
-            <td><a href="#"></a></td><td><a href="#">Rowing</a></td>
+            <td><a href="#">Track & Field</a></td><td><a href="#">Rowing</a></td>
         </tr>
          <tr>
             <td><a href="#"></a></td><td><a href="#">Track & Field</a></td>
@@ -70,6 +80,7 @@
 
     </tbody>
 </table>
+        </div> <!--end of sports table-->
         
         <a class="twitter-timeline" href="https://twitter.com/unccaa" data-widget-id="439826964702953473">Tweets by @unccaa</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
