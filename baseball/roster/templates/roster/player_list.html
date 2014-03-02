@@ -1,19 +1,24 @@
 <!-- new file: roster/templates/roster/player_list.html -->
 
-{% extends "base.html" %}
-
-{% block content %}
-    <h2>All Players</h2>
-
-    <script>
+ <script>
     $(document).ready(function() {
     $('#example').dataTable( {
         "aaSorting": [[ 30, "desc" ]]
     } );
-} );
+    } );
     </script>
+
+
+{% extends "base.html" %}
+
+{% block content %}
     
     
+    
+    <h1 class="player_list">Baseball</h1>
+    <h3>All Players</h3>
+    
+    <div class="col-md-9">
     <table id="player_list">
     <thead>
         <a href="{{ player.id }}">{{ player.name }}</a>
@@ -27,7 +32,6 @@
             <th>Year</th>
             <th>Batting Average</th>
             <th>Runs</th>
-            
         </tr>
     </thead>
     <tbody>
@@ -43,22 +47,22 @@
             <td>{{ player.year }}</td>
             <td>{{ player.batting_avg }}</td>
             <td>{{ player.runs }}</td>
-            
-            
+  
         </tr>
         {% endfor %}
     </tbody>
     </table>
-    
+    </div>
+    <div class="col-md-3">
+        <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
     
     <p><a href="/">Return to UNC Athletics home page</a></p>
 
 
 
-    <container id="baseball">
-        <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </container>
+    
 
 
 {% endblock %}

@@ -47,6 +47,49 @@ h1.home_header {
     font-size: 90pt;
 }
 
+/*style for detail*/
+
+h1.player_list {
+    text-align: center;
+}
+
+
+figure.floatright {
+    float: right;
+    clear: right;
+    border: .75px solid #4D6A7F;
+
+}
+
+img.floatleft {
+    margin: 5px;
+    border-bottom: 2px solid #4D6A7F;
+    border-right: 2px solid #4D6A7F;
+    border-top: 2px solid #AAD8FF;
+    border-left: 2px solid #AAD8FF;
+    float: left;
+    clear: left;
+    margin-right: 20px;
+
+}
+
+img.floatacross {
+    margin: 5px;
+    border-bottom: 1px solid black;
+    float: left;
+}
+
+figcaption {
+    font-style: oblique;
+}
+
+
+/*style for detail*/
+
+p {
+    clear: both;
+}
+
 /*style for tables*/
 
 #player_list {

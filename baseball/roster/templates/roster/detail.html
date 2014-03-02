@@ -4,25 +4,51 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2> Player: {{ Player.name }}</h2>
+<p><a href="/players">Baseball Team</a></p>
+<h2> Player: {{ player.name }}</h2>
+<img class="floatleft" src="{{ player.imgurl }}">
 
 <div class="row">
 
-<div class="col-md-6">
-    <p><a href="/players">Baseball Team</a></p>
-    <p> Details</p>
+<div class="col-md-12">
+    
+    
+    <p> Get to know {{ player.year}} {{ player.name}}: </p>
+    <figure class="floatright">
+    <img src="{{ player.action }}" alt="action">
+        <figcaption>{{ player.position}} {{ player.name}} in action on the field. </figcaption>
+    </figure>
+       
     <ul>
-        <li>Number: {{ player.number }} </li>
-        <li>Name: {{ player.name }}</li>
-        <li>Story: {{ player.story }}</li>
-        <li><img src="{{ player.imgurl }}"></li>
-        
-        <div id="action_img">
-        <img src="{{ player.action }}">
-        </div>
+        <li>Jersey Number: {{ player.number }} </li>
+        <li>Dominant Hand: {{ player.dominant_hand }}</li>
+        <li>Position: {{ player.position }}</li>
+        <li>Height: {{ player.height }} </li>
+        <li>Weight: {{ player.weight }} </li>
+        <li>Year in School: {{ player.year }}</li>
+        <li>Hometown: {{ player.hometown }} </li>
+        <li>High School: {{ player.high_school }} </li>
+        <li>Batting Average: {{ player.batting_avg }} </li>
+        <li>Games Player vs Games Started: {{ player.gp_gs }} </li>
+        <li>At Bats: {{ player.at_bats }} </li>
+        <li>Runs this Season: {{ player.runs }} </li>
+        <li>Hits this Season: {{ player.hits }} </li>
+        <li>Doubles: {{ player.doubles }} </li>
+        <li>Homeruns: {{ player.homeruns }} </li>
+        <li>RBI or runs batted in: {{ player.rbi }} </li>
+        <li>Total Bases: {{ player.total_bases }} </li>
+        <li>Slugging Percentage: {{ player.slugging }} </li>
+        <li>Walks: {{ player.walks }} </li>
+        <li>Strikeouts: {{ player.strikeouts }} </li>
+        <li>On Base Percentage: {{ player.on_base_percentage }} </li>
+        <li>Assists: {{ player.assists }} </li>
+        <li>Errors: {{ player.errors }} </li>    
     </ul>
 </div>
 
+
+
 </div>
+<footer>Photos courtesty of <a href="http://www.goheels.com/">Go Heels.com</a></footer>
 
 {% endblock %}
