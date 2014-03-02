@@ -6,8 +6,6 @@ light blue: #AAD8FF
 Carolina blue: #4DB3FF
 medium dark carolina: #3D90CC
 Grayish color:#4D6A7F
-
-
 */
 
 body {
@@ -39,7 +37,10 @@ div.home_header {
     text-align: center;
 }
 
-div.
+container.baseball {
+    width: 30%;
+    
+}
 
 h1.home_header {
     font-style: italic;
