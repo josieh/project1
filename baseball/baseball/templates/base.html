@@ -10,23 +10,173 @@
         <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet">
         <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
             
-        
+    <!---data tables script-->      
         <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
         <script src="{{ STATIC_URL }}js/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
         <script src="{{ STATIC_URL }}js/DataTables-1.9.4/media/js/jquery.dataTables.min.js"></script>
         
-        <script>
+    <!---hi charts script-->        
+        <script src="{{ STATIC_URL }}js/Highcharts-3.0.9/js/highcharts.js"></script>
+        <script src="{{ STATIC_URL }}js/Highcharts-3.0.9/js/modules/exporting.js"></script>
         
+   
+    
+        <script>
+    //this is the datatables function    
             $(document).ready(function() {
             $('#player_list').dataTable( {
             
             "bPaginate": false,
             "bAutoWidth": false,
-            "bInfo": false
+            "bInfo": false,
+            "aaSorting": [[ 30, "desc" ]]
             
             } );
             
             } );
+            
+            
+
+    
+    //this is height and weight chart on Player_list
+    
+$(function () {
+        $('#container').highcharts({
+            
+           
+            
+            chart: {
+                type: 'scatter',
+                zoomType: 'xy'
+            },
+            title: {
+                text: 'Height Versus Weight of different positions'
+            },
+            subtitle: {
+                text: 'Source: Go Heels.com'
+            },
+            xAxis: {
+                title: {
+                    enabled: true,
+                    text: 'Height (inches)'
+                },
+                startOnTick: true,
+                endOnTick: true,
+                showLastLabel: true
+            },
+            yAxis: {
+                title: {
+                    text: 'Weight (lbs)'
+                }
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'left',
+                verticalAlign: 'top',
+                x: 100,
+                y: 70,
+                floating: true,
+                backgroundColor: '#FFFFFF',
+                borderWidth: 1
+            },
+            plotOptions: {
+                scatter: {
+                    marker: {
+                        radius: 5,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                lineColor: 'rgb(100,100,100)'
+                            }
+                        }
+                    },
+                    states: {
+                        hover: {
+                            marker: {
+                                enabled: false
+                            }
+                        }
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{series.name}</b><br>',
+                        pointFormat: '{point.x} cm, {point.y} kg'
+                    }
+                }
+            },
+            
+            
+series: [{
+                name: 'Baseman',
+                color: 'red',
+                data: [
+                        [72,179],
+                        [73,190],
+                        [73,201]
+                      ]
+    
+            }, {
+                name: 'Catcher',
+                color: 'blue',
+                data: [
+                    [72,215],
+                    [72,197],
+                  [70,190]] 
+                
+            }, {
+                name: 'Infield',
+                color: 'purple',
+                data: [
+                    [73,180],
+                    [70,180]
+                  ]
+            }, {
+                name: 'Pitcher',
+                color: 'green',
+                data: [
+                    [74,180],
+                    [73,180],
+                    [73,190],
+                    [74,189],
+                    [72,170],
+                    [75,190],
+                    [72,170],
+                    [73,211],
+                    [74,207],
+                    [72,168],
+                    [72,170],
+                    [74,174],
+                    [75,191],
+                    [74,210],
+                    [75,185],
+                    [78,226],
+                    [80,270]
+                  ]
+                
+            }, {
+                name: 'Outfield',
+                color: 'yellow',
+                data: [
+                    [67,170],
+                    [69,165],
+                    [74,180],
+                    [71,200],
+                    [74,175],
+                    [69,197],
+                    [69,171]
+                  ]
+                
+            }, {
+                name: 'Short Stop',
+                color: 'orange',
+                data: [
+                    [69,171],
+                    [74,200]
+                  ]
+                
+            }]
+        });
+    });
+    
             
             
             
