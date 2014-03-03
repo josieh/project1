@@ -9,7 +9,14 @@
     {% block content %}
        {{message}}
            
- 
+        <head>
+        <script src="js/jquery.js"></script>
+        <script src="js/tabletop.js"></script>
+        <script src="js/newsquiz.min.js"></script>      
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet" media="screen">
+        </head>
 
         <h1>Welcome to UNC Athletic's Official website</h1>
        
@@ -17,7 +24,7 @@
        
        <div class="col-md-8"> 
         <td class="video">
-            <iframe src="//player.vimeo.com/video/85091524?title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+            <iframe src="//player.vimeo.com/video/85091524?title=0&amp;byline=0&amp;portrait=0" width="100%" height="450px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </td>
         </div>
        
@@ -77,15 +84,26 @@
          <tr>
             <td><a href="#"></a></td><td><a href="#">Volleyball</a></td>
         </tr>
-
     </tbody>
-</table>
+    </table>
         </div> <!--end of sports table-->
         
-        <a class="twitter-timeline" href="https://twitter.com/unccaa" data-widget-id="439826964702953473">Tweets by @unccaa</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        
+        
+    <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
+        
+ 
+
+    <body>
+        <div id="quiz_container"></div>
+            <script type="text/javascript">
+                var quiz = jQuery('#quiz_container').quiz('https://docs.google.com/spreadsheet/pub?key=0At1Mj0ncV56DdFcxVzNJYXNORjZNWXdaX05FcDZ5YVE&output=html');
+            </script>
+        
+        
         
         
     

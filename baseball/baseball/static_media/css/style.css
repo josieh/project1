@@ -26,7 +26,7 @@ img {
     float: right;
 }
 
-div.home_header {
+/*div.home_header {
     width: 100%;
     color: white;
     background-color: #4D6A7F;
@@ -48,6 +48,7 @@ td.video {
     height: 100%;
     width: 100%;
 }
+*/
 
 container.baseball {
     width: 30%;
@@ -104,6 +105,8 @@ img.floatleft {
 img.floatacross {
     margin: 5px;
     border-bottom: 1px solid black;
+    -webkit-box-shadow: 3px 3px 3px #7C7C7C;
+    box-shadow: 3px 3px 3px #7C7C7C;
     float: left;
 }
 

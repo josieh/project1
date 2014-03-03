@@ -43,19 +43,33 @@
             
             } );
             
-    //This is the tab function on the player_list page
-      //$(function() {
-        //$( "#tabs" ).tabs();
-      //});
+    //high charts on detail.html
+    
+    $(document).ready(function() {
 
+    var options = {
+        chart: {
+            renderTo: 'container_detailchart',
+            type: 'spline'
+        },
+        series: [{}]
+        };
 
+            $.getJSON('data.json', function(data) {
+                options.series[0].data = data;
+                var chart = new Highcharts.Chart(options);
+            });
+        
+        });
+
+    
     
     //this is height and weight chart on Player_list
     
     $(function () {
         $('#container').highcharts({
             
-           
+    
             
             chart: {
                 type: 'scatter',
@@ -185,6 +199,45 @@ series: [{
                     [74,200]
                   ]
                 
+            }]
+        });
+        
+    });
+    
+    //slugging and batting average chart
+    $(function () {
+        $('#container_2').highcharts({
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Batting Averages vs Slugging Averages'
+            },
+            xAxis: {
+                categories: ['Wood Myers', 'Skye Bolt', 'Tom Zengel', 'Michael Massardo', 'Adrian Chacon', 'Zach Daly']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Hitting'
+                }
+            },
+            tooltip: {
+                pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                shared: true
+            },
+            plotOptions: {
+                column: {
+                    stacking: 'percent'
+                }
+            },
+                series: [{
+                name: 'Batting Average',
+                data: [.378, .172, .385, .286, .263, .235]
+            }, {
+                name: 'Slugging Average',
+                data: [.405, .172, .615, .286, .368, .412]
+           
             }]
         });
     });

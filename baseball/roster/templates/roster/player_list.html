@@ -1,5 +1,5 @@
 <!-- new file: roster/templates/roster/player_list.html -->
-
+<head>
  <script>
 
     $('#myTab a').click(function (e) {
@@ -7,9 +7,9 @@
         $(this).tab('show')
       })
 
-	</script>
+    </script>
 	</head>
-	<body>
+        <body>
 
     
 
@@ -75,25 +75,28 @@
     <!----tabs for graphs -->
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-      <li><a href="#profile" data-toggle="tab">Position - Height vs Weight </a></li>
-      <li><a href="#messages" data-toggle="tab"></a></li>
+      <li class="active"><a href="#home" data-toggle="tab">Position and Player Build</a></li>
+      <li><a href="#profile" data-toggle="tab">Batting and Slugging Avergaes</a></li>
+      <li><a href="#messages" data-toggle="tab">Third Chart</a></li>
       
     </ul>
     
     <!-- Tab panes -->
     <div class="tab-content">
-      <div class="tab-pane active" id="home">...</div>
+      <div class="tab-pane active" id="home">
+        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        
+      </div>
       <div class="tab-pane" id="profile">
-         <div id="container" style= margin: 0 auto"></div>
+         <div id="container_2" style= margin: 0 auto"></div>
         </div>
       </div>
-      <div class="tab-pane" id="messages">...</div>
+      
       
     </div>
      <!---- end of tabs for graphs -->
     
-    <!---hichart-->
+    
    
    
     
