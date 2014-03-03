@@ -160,3 +160,8 @@ container.player_list td {
     font-size: 10pt;
     border-top: 1px solid gray;
 }
+
+img.roster {
+    height: 30%;
+    position: relative;
+}

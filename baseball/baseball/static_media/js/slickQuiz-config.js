@@ -5,7 +5,7 @@
 var quizJSON = {
     "info": {
         "name":    "Test Your Baseball Knowledge!!",
-        "main":    "<p>Test your knowledge of current and historical sports knowledge </p>",
+        "main":    "<p>Test your knowledge of current and historical sports knowledge! This month's featured sport is Baseball.  </p>",
         "results": "<h5>Learn More</h5><p>Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>",
         "level1":  "Baseball Trivia-Night Ready",
         "level2":  "Trivia Contender",
