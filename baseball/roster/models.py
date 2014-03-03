@@ -42,3 +42,21 @@ class Player(models.Model):
     def save(self, *args, **kwargs):
         self.name = self.name.upper()
         
+class Coach(models.Model):
+    firstname = models.TextField(null=True)
+    lastname = models.TextField(null=True)
+    title = models.TextField(null=True)
+    story = models.TextField(null=True)
+    coaching_age = models.IntegerField(null=True, max_length=2)
+    
+    
+    class Meta(object):
+        verbose_name_plural = "Coaches"
+        ordering = ('lastname','coaching_age')
+    
+    def __unicode__(self):
+        return self.lastname
+    
+    def save(self, *args, **kwargs):
+        self.lastname = self.lastname()
+        super(Coach, self).save(*args, **kwargs)

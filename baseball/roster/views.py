@@ -1,5 +1,5 @@
 # project1/baseball/roster/views.py
-from roster.models import Player
+from roster.models import Player, Coach
 from django.shortcuts import render, get_object_or_404, redirect, render_to_response
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
@@ -39,6 +39,8 @@ def roster (request):
 def player (request, pk):
     player = get_object_or_404(Player, id=pk)
     return render(request, "roster/detail.html", {'player': player})
+    coach = Coach.objects.all()
+    return render(request, "roster/detail.html", {"coaches":coach})
     
 
 
