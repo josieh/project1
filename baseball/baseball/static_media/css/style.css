@@ -124,8 +124,6 @@ table.sports_table {
     text-align: left;
     padding: 1%;
     border-collapse: collapse;
-    background-color: #4D6A7F;
-    color: white;
     position: relative;
     clear: both;
 }
@@ -133,15 +131,13 @@ table.sports_table {
 table.sports_table a {
     text-align: left;
     padding: 1%;
-    border-collapse: collapse;
-    background-color: #4D6A7F;
-    color: white;
+    color: #4D6A7F;
 }
 
 table.sports_table td{
     padding: 2%;
     margin: 2%;
-    
+    border-top: 1px solid gray;
 }
 
 table.sports_table th{
@@ -160,4 +156,5 @@ container.player_list td {
     padding: 1%;
     text-align: center;
     font-size: 10pt;
+    border-top: 1px solid gray;
 }
