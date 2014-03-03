@@ -9,7 +9,7 @@ Grayish color:#4D6A7F
 */
 
 body {
-    background-image: url("images/gray-pattern.png");
+    background-color: #4D6A7F;
 }
 
 div.container_base {
@@ -26,10 +26,10 @@ img {
     float: right;
 }
 
-/*div.home_header {
+div.home_header {
     width: 100%;
     color: white;
-    background-color: #4D6A7F;
+    background-image: url("images/franklin.jpg");
     opacity: .90;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +37,7 @@ img {
     text-align: center;
 }
 
-div.container-responsive {
+/*div.container-responsive {
    position: relative; 
    }
 div.responsive-container iframe {
@@ -61,7 +61,6 @@ h1.home_header {
 }
 
 div.roster_header {
-    background-image: url("images/stadium-header.png");
     padding-top: 8%;
     padding-bottom: 8%;
     background-opacity: .80;
