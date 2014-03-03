@@ -9,9 +9,7 @@ urlpatterns = patterns('',
     
     url(r'^$', 'roster.views.home', name='home'),
     url(r'^players/$', 'roster.views.roster', name='list'),
-    url(r'^players/(?P<pk>\d+)$', 'roster.views.player', name='player'),
- 
-    
+    url(r'^players/(?P<pk>\d+)$', 'roster.views.player', name='player'),   
 )
 
 
