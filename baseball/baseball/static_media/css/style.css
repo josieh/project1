@@ -5,13 +5,23 @@ Dark Blue: #2F6D9B
 light blue: #AAD8FF
 Carolina blue: #4DB3FF
 medium dark carolina: #3D90CC
-Grayish color:#4D6A7F
+Grayish color:#4D6A7F*
+
+@font-face {
+	font-family: Caviar Dreams;
+	src:url(../fonts/caviar_dreams/Caviar_Dreams_Bold.ttf);
+h1 {
+    font-family: "Caviar_Dreams_Bold";
+}
 */
+
 
 body {
     background-image: url("images/furley_bg.png");
     background-image: url("images/pinstripe.png")
 }
+
+
 
 div.container_base {
     width: 90%;
@@ -57,8 +67,9 @@ container.baseball {
 }
 
 h1.home_header {
-    font-style: italic;
-    font-size: 90pt;
+    font-style: oblique;
+    font: Verdana;
+    font-size: 80pt;
 }
 
 div.roster_header {
@@ -164,4 +175,49 @@ container.player_list td {
 img.roster {
     height: 30%;
     position: relative;
+}
+
+div.player_spotlight {
+    backgorund-color: #2F6D9B;
+}
+
+
+
+h2.detail {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+ul.detail {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+li.detail {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+ 
+li.detail:last-child {
+  border: none;
+}
+ 
+li.detail a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+li.detail a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
 }
