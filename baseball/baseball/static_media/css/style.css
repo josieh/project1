@@ -9,7 +9,8 @@ Grayish color:#4D6A7F
 */
 
 body {
-    background-color: #4D6A7F;
+    background-image: url("images/furley_bg.png");
+    background-image: url("images/pinstripe.png")
 }
 
 div.container_base {
@@ -149,6 +150,7 @@ container.player_list th {
     text-align: center;
     font-size: 10pt;
     font-weight: 120;
+    padding-top: 3%;
 }
 
 

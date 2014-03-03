@@ -21,47 +21,132 @@
     
     
     <img src""images/stadium-header.png"">
+         <h3>Baseball Roster - 2014</h3>
     
+        <div class="col-md-9">
+    <!----tabs for player roster and coaches roster -->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Players</a></li>
+      <li><a href="#profile" data-toggle="tab">Coaches</a></li>
+     
+      
+    </ul>
     
-    <!--Table with players in a container--> 
-    <container class="player_list">
-        <h3>Baseball Roster - 2014</h3>
-    <div class="col-md-9">
-    <table id="player_list">
-    <thead>
-        <a href="{{ player.id }}">{{ player.name }}</a>
-        <tr>
-            <th>Player Name</th>
-            <th>Jersey Number</th>
-            <th>Dominant Hand</th>
-            <th>Position</th>
-            <th>Height</th>
-            <th>Weight</th>
-            <th>Year</th>
-            <th>Batting Average</th>
-            <th>Runs</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for player in players %}
-        {# Each "player" is a player model object. #}
-        <tr>
-            <td><a href="{{ player.id }}">{{ player.name }}</a></td>
-            <td>{{ player.number }}</td>
-            <td>{{ player.dominant_hand }}</td>
-            <td>{{ player.position }}</td>
-            <td>{{ player.height }}</td>
-            <td>{{ player.weight }}</td>
-            <td>{{ player.year }}</td>
-            <td>{{ player.batting_avg }}</td>
-            <td>{{ player.runs }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-    </table>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="home">
+        <!--Table with players in a container--> 
+            <container class="player_list">
+               
+            
+            <table id="player_list">
+            <thead>
+                <a href="{{ player.id }}">{{ player.name }}</a>
+                <tr>
+                    <th>Player Name</th>
+                    <th>Jersey Number</th>
+                    <th>Dominant Hand</th>
+                    <th>Position</th>
+                    <th>Height</th>
+                    <th>Weight</th>
+                    <th>Year</th>
+                    <th>Batting Average</th>
+                    <th>Runs</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in players %}
+                {# Each "player" is a player model object. #}
+                <tr>
+                    <td><a href="{{ player.id }}">{{ player.name }}</a></td>
+                    <td>{{ player.number }}</td>
+                    <td>{{ player.dominant_hand }}</td>
+                    <td>{{ player.position }}</td>
+                    <td>{{ player.height }}</td>
+                    <td>{{ player.weight }}</td>
+                    <td>{{ player.year }}</td>
+                    <td>{{ player.batting_avg }}</td>
+                    <td>{{ player.runs }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            </table>
+            
+             </container>
+            <!--end of table with players in a container-->
+        
+      </div>
+      <div class="tab-pane" id="profile">
+          <container class="player_list">
+               
+            
+            <table id="player_list">
+            <thead>
+                <a href="{{ player.id }}">{{ player.name }}</a>
+                <tr>
+                    <th>Name</th>
+                    <th>Title</th>
+                     <th>Specialty</th>
+                     <th>Alma Mater</th>
+                     
+                 
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                   <td>Mike Fox</td>
+                    <td>Head Coach</td>
+                    <td>All Around</td>
+                     <td>UNC-CH</td>
+                </tr>
+                    <tr>
+                   <td>Scott Forbes</td>
+                    <td>Associate Head Coach</td>
+                     <td>Pitching</td>
+                     <td>North Carolina Wesleyan</td>
+                </tr>
+                     <tr>
+                   <td>Scott Jackson</td>
+                    <td>Assisstant Coach</td>
+                     <td>Recruiting</td>
+                     <td>Campbell</td>
+                </tr>
+                     <tr>
+                   <td>Bryant Gaines</td>
+                    <td>Assisstant Coach</td>
+                     <td>Pitching</td>
+                     <td>UNC-CH</td>
+                </tr>
+                <tr>
+                   <td>Dave Arendas</td>
+                    <td>Director of Baseball Operations</td>
+                     <td>Administration</td>
+                     <td>UNC-CH</td>
+                </tr>
+                     <tr>
+                   <td>Mark Fleury</td>
+                    <td>Undergraduate Assistant Coach</td>
+                     <td>Catching</td>
+                     <td>UNC-CH</td>
+                </tr>
+                      <tr>
+                   <td>Josh Horton</td>
+                    <td>Undergraduate Assistant Coach</td>
+                     <td>Shortstop/Hitting</td>
+                     <td>UNC-CH</td>
+                </tr>
+            </tbody>
+            </table>
+            
+             </container>
+        </div>
+      </div>
     </div>
-     </container>
-    <!--end of table with players in a container-->
+        
+        
+   
     
     <div class="col-md-3">
         <a class="twitter-timeline" href="https://twitter.com/DiamondHeels" data-widget-id="439406181010784256">Tweets by @DiamondHeels</a>
